@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Список компаний</h2>
+    <table>
+        <tr><th>rank</th><th>employer</th><th>employerCount</th><th>employerSalary</th></tr>
+        {% for person in people %}
+        <tr><td>{{ person.rank }}</td><td>{{ person.employer }}</td><td>{{ person.employeesCount }}</td><td>{{ person.medianSalary }}</td></tr>
+        {% endfor %}
+    </table>
+
+</body>
+</html>
